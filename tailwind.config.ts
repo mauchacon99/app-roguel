@@ -1,4 +1,5 @@
 import type { Config } from "tailwindcss";
+import flowbite from "flowbite-react/tailwind";
 
 const config: Config = {
   content: [
@@ -14,12 +15,15 @@ const config: Config = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       colors: {
-        golden: {
-          primary: "#d9ad26",
+        primary: {
+          "900": "#976f05",
+          "800": "#b1871f",
+          "700": "#cb9f39",
+          "600": "#e5b652",
+          "500": "#ffce6c",
         },
       },
     },
   },
-  plugins: [],
 };
 export default config;
