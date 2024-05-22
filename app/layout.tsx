@@ -10,6 +10,7 @@ export const metadata: Metadata = {
 };
 import { ThemeModeScript } from "flowbite-react";
 import Head from "next/head";
+import { Nav } from "./components/layout/Navbar";
 
 export default function RootLayout({
   children,
@@ -18,9 +19,12 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body className="font-body ">
-        <div className=" w-full flex   justify-center">
-          <div className="max-w-[1440px] flex-col">{children}</div>
+      <body className="font-body">
+        <Nav />
+        <div className="w-full flex justify-center">
+          <div className="lg:max-w-[1440px]  w-full flex-col flex justify-center">
+            {children}
+          </div>
         </div>
       </body>
     </html>

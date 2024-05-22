@@ -5,13 +5,13 @@ export const Feature = () => {
   return (
     <section className="bg-white py-10 md:py-16 xl:relative">
       <div className="container max-w-screen-xl mx-auto px-4">
-        <div className="flex flex-col xl:flex-row justify-end md:space-x-10">
+        <div className="flex flex-col xl:flex-row justify-end md:space-x-10 ">
           <div className="md:flex h-full w-1/2 hidden ">
             <Image src={Image2} alt="Logo img" />
           </div>
 
-          <div className=" ">
-            <h1 className="font-semibold text-gray-900 text-xl md:text-4xl text-center leading-normal mb-6">
+          <div className="">
+            <h1 className="font-semibold text-gray-900  text-4xl text-center leading-normal mb-6">
               We work with different types of remodeling.
             </h1>
 
@@ -20,7 +20,7 @@ export const Feature = () => {
               <br /> you are free to choose the designs you want.
             </p>
 
-            <div className="flex flex-col md:flex-row justify-center xl:justify-start space-x-4 mb-20">
+            <div className="flex flex-col md:flex-row justify-center xl:justify-start space-x-4 mb-10 lg:mb-20">
               <div className="px-8 h-20 mx-auto md:mx-0 bg-gray-200 rounded-lg flex items-center justify-center mb-5 md:mb-0">
                 <FeatherIcon
                   icon="check-circle"
@@ -38,7 +38,7 @@ export const Feature = () => {
               </div>
             </div>
 
-            <div className="flex flex-col md:flex-row justify-center xl:justify-start space-x-4 mb-20">
+            <div className="flex flex-col md:flex-row justify-center xl:justify-start space-x-4 mb-10 lg:mb-20">
               <div className="px-8 h-20 mx-auto md:mx-0 bg-gray-200 rounded-lg flex items-center justify-center mb-5 md:mb-0">
                 <FeatherIcon
                   icon="lock"
