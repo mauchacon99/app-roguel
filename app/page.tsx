@@ -1,5 +1,3 @@
- 
-import { Nav } from "./components/layout/Navbar";
 import { Feature } from "./components/sections/Feature";
 import { Gallery } from "./components/sections/Gallery";
 import { Book } from "./components/sections/Book";
