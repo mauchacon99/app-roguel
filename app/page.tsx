@@ -5,26 +5,12 @@ import { Footer } from "./components/layout/Footer";
 import { Home } from "./components/sections/Home";
 
 export default function Page() {
- 
   return (
     <>
-      {/*  home section //nd  */}
-
       <Home />
-
-      {/* gallery section */}
       <Gallery />
-      {/*  feature section */}
       <Feature />
-      {/* feature section //end*/}
-
-      {/* gallery section //end  */}
-
-      {/* book section  */}
       <Book />
-      {/* book section //end */}
-
-      {/* footer */}
       <Footer />
     </>
   );
