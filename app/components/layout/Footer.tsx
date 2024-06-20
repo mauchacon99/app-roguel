@@ -18,7 +18,7 @@ export const Footer = () => {
               Get your dream house with <br /> D’house
             </p>
 
-            <div className="flex items-center justify-center lg:justify-start space-x-5">
+            {/* <div className="flex items-center justify-center lg:justify-start space-x-5">
               <a
                 href="#"
                 className="px-3 py-3 bg-gray-200 text-gray-700 rounded-full hover:bg-primary-800 hover:text-white transition ease-in-out duration-500"
@@ -39,10 +39,10 @@ export const Footer = () => {
               >
                 <FeatherIcon icon="linkedin" />
               </a>
-            </div>
+            </div> */}
           </div>
 
-          <div className="text-center lg:text-left mb-10 lg:mb-0">
+          {/* <div className="text-center lg:text-left mb-10 lg:mb-0">
             <h4 className="font-semibold text-gray-900 text-2xl mb-6">
               Sitemap
             </h4>
@@ -149,7 +149,7 @@ export const Footer = () => {
             >
               Terms & Conditions
             </a>
-          </div>
+          </div> */}
         </div>
       </div>
     </footer>
