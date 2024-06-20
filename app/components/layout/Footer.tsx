@@ -10,7 +10,7 @@ export const Footer = () => {
         <div className="flex flex-col lg:flex-row justify-between">
           <div className="text-center lg:text-left mb-10 lg:mb-0">
             <div className="flex justify-center lg:justify-start mb-5">
-              <Image src={Image2} alt="Logo img" />
+              <Image src={Image2} alt="Logo img" className="h-60 w-80" />
             </div>
 
             <p className="font-light text-gray-400 text-xl mb-10">
