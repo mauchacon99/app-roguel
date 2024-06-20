@@ -27,7 +27,7 @@ export default function Page() {
       <Home />
       <Gallery />
       <Feature />
-      <Book />
+      {/* <Book /> */}
       <Footer />
     </div>
   );
