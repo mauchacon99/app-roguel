@@ -2,7 +2,7 @@ import FeatherIcon from "feather-icons-react";
 
 export const Book = () => {
   return (
-    <section className="bg-white py-10 md:py-16">
+    <section className="bg-white  md:py-16">
       <div className="container max-w-screen-xl mx-auto px-4  ">
         <div className="bg-black flex flex-col justify-between lg:flex-row items-center w-full lg:justify-around py-14 rounded-3xl px-4">
           <div className="text-center lg:text-left mb-10 lg:mb-0  ">

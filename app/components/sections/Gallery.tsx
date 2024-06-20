@@ -1,13 +1,60 @@
 "use client";
-import IMG_3164 from "@/public/assets/image/home/IMG_3164.jpeg";
-import Image from "next/image";
-import { Swiper, SwiperSlide } from "swiper/react";
+import { storageCdn } from "@/app/storage/storage";
 import "swiper/css/navigation";
 import "swiper/css";
-import { storageCdn } from "@/app/storage/storage";
-import { Navigation } from "swiper/modules";
-
+import { CardSlider, PropsCardSlider } from "../cards/CardSlider";
 export const Gallery = () => {
+  const cards: PropsCardSlider[] = [
+    {
+      images: [
+        storageCdn.projects.project10,
+        storageCdn.projects.project11,
+        storageCdn.projects.project12,
+      ],
+      content: {
+        title: "Noteworthy technology acquisitions 2021",
+        description: `Here are the biggest enterprise technology acquisitions of 2021
+                  so far, in reverse chronological order.`,
+      },
+    },
+    {
+      images: [
+        storageCdn.projects.project20,
+        storageCdn.projects.project21,
+        storageCdn.projects.project22,
+      ],
+      content: {
+        title: "Noteworthy technology acquisitions 2021",
+        description: `Here are the biggest enterprise technology acquisitions of 2021
+                  so far, in reverse chronological order.`,
+      },
+    },
+    {
+      images: [
+        storageCdn.projects.project30,
+        storageCdn.projects.project31,
+        storageCdn.projects.project32,
+      ],
+      content: {
+        title: "Noteworthy technology acquisitions 2021",
+        description: `Here are the biggest enterprise technology acquisitions of 2021
+                  so far, in reverse chronological order.`,
+      },
+    },
+    {
+      images: [
+        storageCdn.projects.project40,
+        storageCdn.projects.project41,
+        storageCdn.projects.project42,
+      ],
+      content: {
+        title: "Noteworthy technology acquisitions 2021",
+        description: `Here are the biggest enterprise technology acquisitions of 2021
+                  so far, in reverse chronological order.`,
+      },
+    },
+  ];
+
   return (
     <section className="bg-white  py-10">
       <div className="container max-w-screen-xl mx-auto ">
@@ -15,218 +62,10 @@ export const Gallery = () => {
           Our Projects
         </h1>
 
-        <div className="grid md:grid-cols-1 lg:grid-cols-4 gap-3 px-1">
-          <div className="w-full flex flex-col border border-primary-500 rounded-lg shadow  ">
-            <div className="flex lg:h-full w-full">
-              <Swiper
-                navigation={true}
-                modules={[Navigation]}
-                className="mySwiper"
-              >
-                <SwiperSlide>
-                  <Image
-                    src={storageCdn.projects.project10}
-                    className="h-full rounded-lg "
-                    alt=""
-                  />
-                </SwiperSlide>
-                <SwiperSlide>
-                  <Image
-                    src={storageCdn.projects.project11}
-                    className="h-full rounded-lg "
-                    alt=""
-                  />
-                </SwiperSlide>
-                <SwiperSlide>
-                  {" "}
-                  <Image
-                    src={storageCdn.projects.project12}
-                    className="h-full rounded-lg "
-                    alt=""
-                  />
-                </SwiperSlide>
-              </Swiper>
-            </div>
-
-            <div className="p-5">
-              <a href="#">
-                <h5 className="mb-2 text-2xl font-bold tracking-tight text-black  ">
-                  Noteworthy technology acquisitions 2021
-                </h5>
-              </a>
-              <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                Here are the biggest enterprise technology acquisitions of 2021
-                so far, in reverse chronological order.
-              </p>
-              <a
-                href="#"
-                className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-primary-900 rounded-lg hover:bg-black focus:ring-4 focus:outline-none "
-              >
-                Read more
-                <svg
-                  className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 14 10"
-                >
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M1 5h12m0 0L9 1m4 4L9 9"
-                  />
-                </svg>
-              </a>
-            </div>
-          </div>
-          <div className="w-full flex flex-col border border-primary-500 rounded-lg shadow  ">
-            <div className="flex w-full h-full">
-              <Swiper
-                navigation={true}
-                modules={[Navigation]}
-                className="mySwiper"
-              >
-                <SwiperSlide>
-                  {" "}
-                  <div className="rounded-t-lg h-full flex relative w-full">
-                    <Image
-                      src={storageCdn.projects.project20}
-                      className="w-full h-full "
-                      alt=""
-                    />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  {" "}
-                  <div className="rounded-t-lg h-full flex relative w-full">
-                    <Image
-                      src={storageCdn.projects.project21}
-                      className="w-full h-full "
-                      alt=""
-                    />
-                  </div>
-                </SwiperSlide>
-                <SwiperSlide>
-                  {" "}
-                  <div className="rounded-t-lg h-full flex relative w-full">
-                    <Image
-                      src={storageCdn.projects.project22}
-                      className="w-full h-full "
-                      alt=""
-                    />
-                  </div>
-                </SwiperSlide>
-              </Swiper>
-            </div>
-            <div className="p-5">
-              <a href="#">
-                <h5 className="mb-2 text-2xl font-bold tracking-tight text-black  ">
-                  Noteworthy technology acquisitions 2021
-                </h5>
-              </a>
-              <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                Here are the biggest enterprise technology acquisitions of 2021
-                so far, in reverse chronological order.
-              </p>
-              <a
-                href="#"
-                className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-primary-900 rounded-lg hover:bg-black focus:ring-4 focus:outline-none "
-              >
-                Read more
-                <svg
-                  className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 14 10"
-                >
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M1 5h12m0 0L9 1m4 4L9 9"
-                  />
-                </svg>
-              </a>
-            </div>
-          </div>{" "}
-          <div className="w-full flex flex-col border border-primary-500 rounded-lg shadow  ">
-            <a href="#">
-              <Image className="rounded-t-lg" src={IMG_3164} alt="" />
-            </a>
-            <div className="p-5">
-              <a href="#">
-                <h5 className="mb-2 text-2xl font-bold tracking-tight text-black  ">
-                  Noteworthy technology acquisitions 2021
-                </h5>
-              </a>
-              <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                Here are the biggest enterprise technology acquisitions of 2021
-                so far, in reverse chronological order.
-              </p>
-              <a
-                href="#"
-                className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-primary-900 rounded-lg hover:bg-black focus:ring-4 focus:outline-none "
-              >
-                Read more
-                <svg
-                  className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 14 10"
-                >
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M1 5h12m0 0L9 1m4 4L9 9"
-                  />
-                </svg>
-              </a>
-            </div>
-          </div>
-          <div className="w-full flex flex-col border border-primary-500 rounded-lg shadow  ">
-            <a href="#">
-              <Image className="rounded-t-lg" src={IMG_3164} alt="" />
-            </a>
-            <div className="p-5">
-              <a href="#">
-                <h5 className="mb-2 text-2xl font-bold tracking-tight text-black  ">
-                  Noteworthy technology acquisitions 2021
-                </h5>
-              </a>
-              <p className="mb-3 font-normal text-gray-700 dark:text-gray-400">
-                Here are the biggest enterprise technology acquisitions of 2021
-                so far, in reverse chronological order.
-              </p>
-              <a
-                href="#"
-                className="inline-flex items-center px-3 py-2 text-sm font-medium text-center text-white bg-primary-900 rounded-lg hover:bg-black focus:ring-4 focus:outline-none "
-              >
-                Read more
-                <svg
-                  className="rtl:rotate-180 w-3.5 h-3.5 ms-2"
-                  aria-hidden="true"
-                  xmlns="http://www.w3.org/2000/svg"
-                  fill="none"
-                  viewBox="0 0 14 10"
-                >
-                  <path
-                    stroke="currentColor"
-                    stroke-linecap="round"
-                    stroke-linejoin="round"
-                    stroke-width="2"
-                    d="M1 5h12m0 0L9 1m4 4L9 9"
-                  />
-                </svg>
-              </a>
-            </div>
-          </div>
+        <div className="grid grid-cols-1 lg:grid-cols-4 gap-3 px-1">
+          {cards.map((card, index) => (
+            <CardSlider key={index} {...card} />
+          ))}
         </div>
       </div>
     </section>

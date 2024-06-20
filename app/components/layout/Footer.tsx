@@ -5,7 +5,8 @@ import Image2 from "@/public/assets/image/navbar-logo1.png"
 
 export const Footer = () => {
   return (
-    <footer className="bg-white py-10 md:py-16">
+    <footer  className="bg-white py-10 md:py-16 ">
+      <input   id="footer" />
       <div className="container max-w-screen-xl mx-auto px-4">
         <div className="flex flex-col lg:flex-row justify-between">
           <div className="text-center lg:text-left mb-10 lg:mb-0">

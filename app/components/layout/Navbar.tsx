@@ -3,8 +3,8 @@ import FeatherIcon from "feather-icons-react";
 import Image from "next/image";
 import Logo1 from "@/public/assets/image/navbar-logo1.png";
 import { useState } from "react";
-import { Home } from "../sections/Home";
 
+import Menu from "./Menu";
 export const Nav = () => {
   const [navbarOpen, setNavbarOpen] = useState(false);
 
@@ -37,21 +37,7 @@ export const Nav = () => {
                 navbarOpen ? "flex" : "hidden"
               } lg:flex flex-col lg:flex-row lg:items-center lg:mx-auto lg:space-x-8 xl:space-x-16`}
             >
-              <li className="font-semibold text-primary-500 text-lg hover:text-primary-400 transition ease-in-out duration-300 mb-5 lg:mb-0">
-                <a href="#">Home</a>
-              </li>
-
-              <li className="font-semibold text-primary-500 text-lg hover:text-primary-400 transition ease-in-out duration-300 mb-5 lg:mb-0">
-                <a href="#">Services</a>
-              </li>
-
-              <li className="font-semibold text-primary-500 text-lg hover:text-gray-400 transition ease-in-out duration-300 mb-5 lg:mb-0">
-                <a href="#">Contact</a>
-              </li>
-
-              <li className="font-semibold text-primary-500 text-lg hover:text-gray-400 transition ease-in-out duration-300 mb-5 lg:mb-0">
-                <a href="#">About</a>
-              </li>
+              <Menu />
             </ul>
             <button
               className=" hidden lg:block  h-11 px-6 items-center  border-2 border-primary-600 rounded-lg font-semibold
@@ -66,21 +52,7 @@ export const Nav = () => {
         <ul
           className={` flex  items-center lg:mx-auto  w-full  justify-between bg-black p-3`}
         >
-          <li className="font-semibold text-primary-500 text-lg hover:text-primary-400 transition ease-in-out duration-300">
-            <a href="#">Home</a>
-          </li>
-
-          <li className="font-semibold text-primary-500 text-lg hover:text-primary-400 transition ease-in-out duration-300">
-            <a href="#">Services</a>
-          </li>
-
-          <li className="font-semibold text-primary-500 text-lg hover:text-gray-400 transition ease-in-out duration-300">
-            <a href="#">Contact</a>
-          </li>
-
-          <li className="font-semibold text-primary-500 text-lg hover:text-gray-400 transition ease-in-out duration-300">
-            <a href="#">About</a>
-          </li>
+          <Menu />
           <li>
             <button
               className="lg:hidden  h-11 px-3 items-center   block  border-2 border-primary-600 rounded-lg font-semibold
